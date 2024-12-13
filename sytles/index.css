@@ -1,5 +1,11 @@
 /* Typography */
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -173,4 +179,66 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: 0;
+  padding: 2rem 3rem;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+}
+
+.btn--accent:hover {
+  background: #fd4516;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
